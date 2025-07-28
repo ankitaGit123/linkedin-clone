@@ -1,0 +1,244 @@
+.scrollComponent{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.createPostContainer{
+    display: flex; 
+    height: 10svh;
+    width: 100%;
+    padding-inline: 0.8rem;
+    gap: 1.3rem;
+    position: relative;
+    align-items: center;
+    background-color: rgb(255, 246, 246);
+    border-radius: 20px;
+
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+    max-width: 80%;
+
+}
+
+.uploadButton{
+    position: absolute;
+    bottom: -45px;
+    right: 0;
+    background-color: rgb(37, 188, 90);
+    color:white;
+    border-radius: 10px;
+    padding-inline: 1.2rem;
+    padding-block: 0.8rem;
+    cursor: pointer;
+}
+
+.userProfile{
+    border-radius: 100%;
+    height:60%;
+    width:fit-content;
+
+
+}
+
+.createPostContainer > textarea {
+    width: 100%;
+}
+
+.fab{
+    background-color: rgb(6, 100, 188);
+    border-radius: 100%;
+    justify-content: center;
+    display: flex;
+
+}
+
+.fab > svg{
+    width:fit-content;
+    height: 40px;
+    color:white;
+}
+
+.textAreaOfContent{
+    height: 70%;
+    width: 80%;
+    border: 1px solid silver;
+    border-radius: 10px;
+    outline: none;
+    resize: none;
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+    padding-inline: 1.5rem;
+    padding-block: 0.8rem;
+}
+
+
+.singleCard{
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+    border-bottom: 1px solid rgb(179, 179, 179);
+
+}
+
+.singleCard_profileContainer{
+    display: flex;
+    align-items: flex-start;
+    gap: 1.2rem;
+    padding: 1.2rem;
+    padding-right: 3.4rem;
+
+}
+
+.singleCard_profileContainer > img{
+    width: 10%;
+    border-radius: 50%;
+
+}
+
+.singleCard_image{
+    width: 100%;
+    padding-top: 0.6rem;
+    height: fit-content;
+    overflow: hidden;
+
+}
+
+.singleCard_image > img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.optionContainer {
+    display: flex;
+    height: 20%;
+    width: 100%;
+    justify-content: space-between;
+    padding-block: 0.6;
+
+}
+
+.singleOption_optionsContainer {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.singleOption_optionsContainer > svg {
+    height: 100%;
+    width:8%;
+
+}
+
+.commentsContainer{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+   
+}
+
+.allCommentsContainer {
+    width: 40%;
+    height: 80vh;
+    background-color: white;
+    border-radius: 10px;
+    padding: 1.2rem;
+    padding:  1.4rem;
+    position: relative;
+
+}
+
+.postCommentContainer{
+    position: absolute;
+    bottom: 1.2rem;
+    left: 1.2rem;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+
+}
+
+.postCommentContainer > input{
+    flex: 0.9;
+    padding-inline: 1.5rem;
+    padding-block: 1.2rem;
+    border: none;
+    outline: none;
+    background-color: rgb(228, 228, 228);
+    border-radius: 10px;
+}
+
+.postCommentContainer > input:focus{
+    border: 1px solid silver;
+}
+
+.postCommentContainer_commentBtn{
+    flex: 0.1;
+    width: fit-content;
+    padding: 1.2rem;
+    background-color: rgb(210, 166, 10);
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+
+}
+
+/* Comment display styles */
+.commentsList {
+    max-height: 60vh;
+    overflow-y: auto;
+    margin-bottom: 80px;
+    padding: 10px;
+}
+
+.commentItem {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-left: 3px solid #007bff;
+}
+
+.commentHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.commentAuthor {
+    font-weight: bold;
+    color: #007bff;
+    font-size: 14px;
+}
+
+.commentTime {
+    color: #6c757d;
+    font-size: 12px;
+}
+
+.commentBody {
+    color: #333;
+    font-size: 14px;
+    line-height: 1.4;
+    margin: 0;
+}
+

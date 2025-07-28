@@ -1,0 +1,75 @@
+# let outputPath = await convertUserDataToPdf(userProfile);
+
+# POST image.pnghttp://localhost:9090/register
+
+
+POST http://localhost:9090/register
+content-type: application/json
+
+
+{
+    "username" : "ankita_suru",
+    "name": "Ankita",
+    "email" : "ankita123@mail.com",
+    "password" : "pass123"
+    
+}
+
+###
+
+POST http://localhost:9090/login
+content-type: application/json
+
+{
+    "email":"ankita123@mail.com",
+    "password": "pass123"    
+}
+
+###
+
+
+POST http://localhost:9090/get_user_and_profile
+content-type: application/json
+
+{
+    "token": "1f4d3a460ddd44c418a5953953d52303b62fa256b54cc0c2ac829a2f43ae6e97"
+}
+
+
+###
+
+POST http://localhost:9090/user_update
+content-Type: application/json
+
+{
+    "token": "1f4d3a460ddd44c418a5953953d52303b62fa256b54cc0c2ac829a2f43ae6e97",
+    "bio": "Hello, I am Ankita from Lucknow",
+    "currentPost": "CTO",
+    "pastWork": [
+        {
+            "company": "Google",
+            "position": "Software Engineer",
+            "duration": "2+"
+        }
+    ],
+    "education": [
+        {
+            "school": "IIT ROOKEE",
+            "degree": "B.Tech",
+            "fieldOfStudy": "Computer Science"
+        }
+    ]
+}
+###
+
+GET http://localhost:9090/get_all_profiles
+content-type: application/json
+
+###
+
+POST http://localhost:9090/create_profile_for_user
+content-type: application/json
+
+{
+    "userId": "YOUR_USER_ID_HERE"
+}
