@@ -28,5 +28,5 @@ npm install
 npm start
 
 # In the backend folder
-npm install
+npm install  
 node server.js
